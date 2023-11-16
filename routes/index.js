@@ -7,7 +7,6 @@ const firestore = require ("firebase/firestore");
 //create a reference to the database
 const db = firestore.getFirestore();
 
-//Define index route - get all posts
 
 router.get("/", (req, res) => {
     const postsQuery = firestore.getDocs(firestore.collection(db, "posts"));
